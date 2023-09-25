@@ -12,10 +12,15 @@ function Github() {
     //         setData(data)
     //     })
     // })
-
+const follower = "https://github.com/snjy-kumar";
   return (
     <div className="text-center m-4 bg-gray-600 text-3xl p-4 text-white">Github followers: {data.followers}
+    <br />Github following: {data.following}
+    <br />Github Repo count: {data.public_repos}
     <img src={data.avatar_url} alt="avatar" className="rounded-full h-32 w-32 mx-auto" />
+    <button>
+      <a href={follower} className="text-blue-500">Follow Me</a>
+    </button>
     </div>
     
   )
